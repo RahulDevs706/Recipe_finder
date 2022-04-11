@@ -1,0 +1,77 @@
+
+.wrapper{
+    display: flex;
+    width:100%;
+}
+
+.inputWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    position: relative;
+}
+
+.inputIcon{
+    position: absolute;
+    font-size: 5vw;
+    left:5%;
+    opacity: 60%;
+}
+
+.inputWrapper input{
+    outline:none;
+    border:none;
+    border-radius: 25px;
+    width:85vw;
+    padding:5vw 12vw;
+    font:300 4vw "Ubuntu";
+    box-shadow: 0 0 10px 5px rgba(59, 40, 5, 0.753);
+}
+
+.btnIcon{
+    position: absolute;
+    font-size: 5.5vw;
+    right:5%;
+    opacity: 70%;
+    cursor:pointer;
+}
+
+
+@media screen and (max-width:768px) and (min-width:550px) {
+    .inputIcon{
+        font-size: 4vw;
+        left:4%;
+    }
+    
+    .inputWrapper input{
+        width:80vw;
+        padding:4vw 10vw;
+        font:300 3.5vw "Ubuntu";
+    }
+    
+    .btnIcon{
+        font-size: 5vw;
+        right:4%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    .inputIcon{
+        font-size: 2vw;
+        left:3%;
+    }
+    
+    .inputWrapper input{
+        width:50vw;
+        padding:1.5vw 4vw;
+        font:300 1.5vw "Ubuntu";
+    }
+    
+    .btnIcon{
+        font-size: 2.5vw;
+        right:3%;
+    }
+
+}

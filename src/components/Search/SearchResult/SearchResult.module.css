@@ -1,0 +1,50 @@
+.container{
+    width:100%;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.wrapper>h1{
+    font: 400 7vw "Ubuntu";
+    color:rgba(0, 0, 0, 0.836);
+    margin: 5vw auto; 
+}
+
+
+.noResult{
+    height:80vh;
+    width:100vw;
+    max-width: 100%;
+    font:400 5vw "Ubuntu";
+    color:rgba(0, 0, 0, 0.767);
+    display:flex;
+    justify-content: center;
+    align-items: center;;
+}
+
+@media screen and (max-width:768px) and (min-width:550px) {
+    .wrapper>h1{
+        font: 400 6vw "Ubuntu";
+        margin: 4vw auto; 
+    }
+
+    .noResult{
+        font:400 4vw "Ubuntu";
+    }
+}
+
+@media screen and (min-width:768px) {
+    .wrapper>h1{
+        font: 400 3vw "Ubuntu";
+        margin: 1vw auto; 
+    }
+
+    .noResult{
+        font:400 3vw "Ubuntu";
+    }
+
+}

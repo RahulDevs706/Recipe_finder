@@ -1,0 +1,31 @@
+.fail {
+    color: #dd3939;
+    background-color: #ff000052;
+}
+
+.success {
+    color: #2f802f;
+    background-color: #00ff003f;
+}
+
+.fail,
+.success {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1vw;
+    font: 400 1vw "Ubuntu";
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bbb;
+}
+
+@media screen and (max-width:550px) {
+
+    .fail,
+    .success {
+        padding: 0.5rem;
+        margin-top: 1vw;
+        font: 400 4vw "Ubuntu";
+        border-radius: 10px;
+    }
+}

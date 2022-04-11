@@ -1,0 +1,144 @@
+.container{
+    background-color: #3A3845;
+    color:#fff;
+    width:100vw;
+    max-width: 100%;
+}
+
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+
+.logoWrapper{
+    margin: 3.5vw 2.5vw;
+    cursor: pointer;
+}
+
+.logoWrapper h1{
+    font: 400 11vw "Grand Hotel";
+    transition: all 0.2s;
+    color:white;
+}
+
+.logoWrapper a{
+    text-decoration: none;
+}
+
+.logoWrapper:hover h1{
+    color:#FF8C32;
+}
+
+.btnWrapper{
+    margin: 3.5vw 2.5vw;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btnWrapper>button{
+    border:1px solid #FF8C32;
+    outline:none;
+    cursor:pointer;
+    color:#fff;
+    width: 28%;
+    padding:1.5vw;
+    font:400 4vw "Ubuntu";
+    border-radius: 10px;
+    transition: all 0.3s;
+    background:transparent;
+}
+
+.logout{
+    background-color: #FF8C32 !important;
+    color:#fff
+}
+
+.logout:hover{
+    background-color: #d86e1d !important;
+}
+
+.btnWrapper button:hover{
+    background-color: #FF8C32;
+    color:#fff;
+}
+
+.userAvatar{
+    margin:auto 2vw;
+}
+
+.userImg{
+    width:10vw;
+    height: 10vw;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.userImg:hover{
+    transform:scale(1.2)
+}
+
+@media screen and (max-width:768px) and (min-width:550px) {
+    .logoWrapper{
+        margin: 2vw 1.5vw;
+    }
+    
+    .logoWrapper h1{
+        font: 400 7vw "Grand Hotel";
+    }
+
+    .btnWrapper{
+        margin: 2vw 1.5vw;
+    }
+    
+    .btnWrapper>button{
+        width: 20%;
+        padding:1vw;
+        font:400 3vw "Ubuntu";
+    }
+
+    .userAvatar{
+        margin:auto 1vw;
+    }
+    
+    .userImg{
+        width:7vw;
+        height: 7vw;
+    }
+    
+    
+}
+
+@media screen and (min-width:768px) {
+    .logoWrapper{
+        margin: 1vw;
+    }
+    
+    .logoWrapper h1{
+        font: 400 3vw "Grand Hotel";
+    }
+
+    .btnWrapper{
+        margin: 1vw;
+    }
+    
+    .btnWrapper>button{
+        width: 5%;
+        padding:0.4vw;
+        font:400 1vw "Ubuntu";
+    }
+
+    .userAvatar{
+        margin:auto 0.75vw;
+    }
+    
+    .userImg{
+        width:3vw;
+        height: 3vw;
+    }
+    
+}
+

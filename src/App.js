@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './components/layout/header/Header'
+import {Switch, Route} from "react-router-dom"
+import Home from './components/Home/Home'
+import Footer from './components/layout/Footer/Footer'
+import ProtectedRoutes from './Routes/ProtectedRoutes'
+import SearchResult from './components/Search/SearchResult/SearchResult'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <ProtectedRoutes exact path="/search" component={SearchResult} />
+      </Switch>
+      <Footer />
+
+     <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+    </>
+  )
 }
 
-export default App;
+export default App
